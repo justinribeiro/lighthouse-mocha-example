@@ -15,3 +15,8 @@ $ cd lighthouse-mocha-example
 $ npm install
 $ npm test
 ```
+
+## But I want to run this on Travis CI!
+Indeed you can. See the included `.travis.yml` to give you a basic idea of how it works or see the screenshot below.
+
+![image](https://cloud.githubusercontent.com/assets/643503/20445616/9f00226e-ad8a-11e6-9e47-bc65cc1f9a81.png)
