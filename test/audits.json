@@ -1,0 +1,41 @@
+{
+  "passes": [{
+    "recordNetwork": true,
+    "recordTrace": true,
+    "gatherers": [      
+      "url",
+      "service-worker",
+      "offline"]
+  }],
+
+  "audits": [
+    "first-meaningful-paint",
+    "time-to-interactive",
+    "service-worker"
+  ],
+
+  "aggregations": [{
+    "name": "Perf metrics",
+    "description": "",
+    "scored": true,
+    "categorizable": true,
+    "items": [{
+      "name": "Page load performance is fast",
+      "description": "",
+      "audits": {
+        "first-meaningful-paint": {
+          "expectedValue": 100,
+          "weight": 1
+        },
+        "time-to-interactive": {
+          "expectedValue": 100,
+          "weight": 1
+        },
+        "service-worker": {
+          "expectedValue": true,
+          "weight": 1
+        }
+      }
+    }]
+  }]
+}

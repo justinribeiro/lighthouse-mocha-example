@@ -1,0 +1,33 @@
+{
+  "name": "lighthouse-mocha-example",
+  "version": "0.0.1",
+  "description": "Simple example showing Lighthouse metric tests using Mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 15000"
+  },
+  "author": "Justin Ribeiro",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "lighthouse": "1.1.6",
+    "chai": "*",
+    "mocha": "^3.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "metrics",
+    "performance",
+    "lighthouse",
+    "testing"
+  ],
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "engines": {
+    "node": ">= 4.4.6"
+  }
+}
