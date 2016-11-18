@@ -1,0 +1,18 @@
+sudo: required
+language: node_js
+node_js:
+  - node
+
+services:
+  - docker
+
+before_install:
+  - docker pull justinribeiro/chrome-headless
+  - docker run -d --net host justinribeiro/chrome-headless
+  - docker ps -a
+
+install:
+  - npm install
+
+script:
+  - npm test
