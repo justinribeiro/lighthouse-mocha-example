@@ -45,7 +45,7 @@ describe('Lighthouse PWA Testing', function() {
     let sw = _lhResult.preparedResults.find(r => {
       return r.name === 'sw';
     });
-    assert.equal(true, sw.value);
+    assert.equal(sw.value, true);
     done();
   });
 
